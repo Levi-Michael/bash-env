@@ -1,0 +1,15 @@
+alias gts='git status'
+alias ga='git add .'
+alias gp='git push'
+
+gm(){
+	git commit -m "$1"
+}
+
+gpu(){
+        git add . ; git commit -m "$1" ; git push --set-upstream origin "$2";
+}
+
+gitp(){
+        git pull ; git add . ; git commit -m "$1" ; git push;
+}

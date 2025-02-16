@@ -1,0 +1,11 @@
+### Docker ALIASES ###
+alias db='docker build -t'
+alias di='docker images'
+alias dockerhub='web_search dockerhub'
+alias dockerrm='docker rm -f $(docker ps -aq)'
+alias dockerrmi='docker rmi -f $(docker images -q) && docker images'
+alias dockerstp='docker stop $(docker ps -aq)'
+alias dp='docker ps'
+alias dr='docker run'
+alias drit='docker run -it'
+alias dt='docker tag'
