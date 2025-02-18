@@ -59,6 +59,10 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/downl
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit -D -t /usr/local/bin/
 
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
 # Define the list of packages
 packages="terraform git-all google-cloud-cli google-cloud-cli-gke-gcloud-auth-plugin kubectl helm docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin jq yq fzf bat tmux"
 
