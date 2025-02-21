@@ -6,7 +6,7 @@ REQUIRED_PACKAGES=("gnupg" "software-properties-common" "apt-transport-https" "c
 # Define the main list of packages to install
 MAIN_PACKAGES=("terraform" "git-all" "google-cloud-cli" "google-cloud-cli-gke-gcloud-auth-plugin"
                "kubectl" "helm" "docker-ce" "docker-ce-cli" "containerd.io"
-               "docker-buildx-plugin" "docker-compose-plugin" "jq" "yq" "fzf" "bat" "tmux" "make")
+               "docker-buildx-plugin" "docker-compose-plugin" "jq" "yq" "fzf" "bat" "tmux" "make" "luarocks" "nodejs" "npm" "python3-pip")
 
 # Function to check if a package is installed
 is_installed() {
