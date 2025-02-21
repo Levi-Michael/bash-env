@@ -1,5 +1,5 @@
 return {
-  'michael/terraform.nvim',
+  'danielyaba/terraform.nvim',
   config = function()
     -- Load the Terraform module
     local terraform = require("terraform")
