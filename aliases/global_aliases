@@ -2,6 +2,8 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+echo -e "\033]11;#2E2E2E\007"
+
 PS1='\[\e[38;5;198m\][\t]\[\e[38;5;219m\][\w]\[\e[38;5;222m\][\[\e[38;5;221;1;4m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[22;24m\]]\n\[\e[38;5;87m\]\h@\[\e[1m\]\u\[\e[22m\]: \[\e[0m\]'
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
@@ -19,3 +21,4 @@ alias n='nvim .'
 alias c='clear'
 alias edit-nvim='nvim ~/.config/nvim'
 alias lg='lazygit'
+alias eip='curl ifconfig.co'
