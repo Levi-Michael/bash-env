@@ -70,7 +70,7 @@ for file in $(pwd)/aliases/*; do
         # Append the source line only if it's not already in .bashrc
         if ! grep -qxF "source $HOME/.config/aliases/$filename" ~/.bashrc; then
             echo "[-] Appending $filename to ~/.bashrc."
-            echo "Source $HOME/.config/aliases/$filename" >> ~/.bashrc
+            echo "source $HOME/.config/aliases/$filename" >> ~/.bashrc
         else
             echo "[✔] $filename is already in ~/.bashrc."
         fi
