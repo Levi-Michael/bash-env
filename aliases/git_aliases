@@ -1,6 +1,7 @@
 alias gts='git status'
 alias ga='git add .'
 alias gp='git push'
+alias gd= 'git diff'
 
 gm(){
 	git commit -m "$1"
