@@ -1,7 +1,12 @@
 alias gts='git status'
 alias ga='git add .'
 alias gp='git push'
-alias gd= 'git diff'
+alias gd='git diff'
+alias gc='git checkout'
+
+gcd(){
+        git checkout -b "$1"
+}
 
 gm(){
 	git commit -m "$1"
