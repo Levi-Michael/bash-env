@@ -3,8 +3,9 @@ alias ga='git add .'
 alias gp='git push'
 alias gd='git diff'
 alias gc='git checkout'
+alias gpull='git pull'
 
-gcd(){
+gcb(){
         git checkout -b "$1"
 }
 
